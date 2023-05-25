@@ -3,11 +3,11 @@ requires = ["flit"]
 build-backend = "flit.buildapi"
 
 [project]
-name =  "py-project-toml"
+name =  "mediabrowser"
 authors = [
-    {name = "Daniel Ciborowski", email = "dciborow@microsoft.com"},
+    {name = "Razvan Stefanescu", email = "rumbu@rumbu.ro"},
 ]
-description = "Sample Python Project for creating a new Python Module"
+description = "API wrapper for Emby and Jellyfin"
 readme = "README.md"
 classifiers = [
     "Development Status :: 3 - Alpha",
