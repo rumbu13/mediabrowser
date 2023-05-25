@@ -16,7 +16,7 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11"
 ]
-requires-python = ">=3.8.1"
+requires-python = ">=3.10"
 dynamic = ["version"]
 
 [project.optional-dependencies]
@@ -100,7 +100,7 @@ venv = "env37"
 reportMissingImports = true
 reportMissingTypeStubs = false
 
-pythonVersion = "3.7"
+pythonVersion = "3.10"
 pythonPlatform = "Linux"
 
 executionEnvironments = [

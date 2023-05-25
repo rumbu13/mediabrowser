@@ -5,7 +5,7 @@
 """This is a Sample Python file."""
 
 
-from __future__ import annotations
+from typing import Any
 
 
 def hello_world(i: int = 0) -> str:
@@ -23,3 +23,12 @@ def good_night() -> str:
 def hello_goodbye():
     hello_world(1)
     good_night()
+
+
+def func_with_bar(param: dict[str, Any] | None) -> None:
+    match param["x"]:
+        case "a":
+            pass
+    if x := param["z"]:
+        print(x)
+        pass
