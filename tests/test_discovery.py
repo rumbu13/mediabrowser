@@ -91,6 +91,7 @@ def socket_get(a, b, c):
     return MonkeySocket(a, b, c)
 
 
+@pytest.mark.integration
 def test_random_discovery(monkeypatch):
     with monkeypatch.context() as m:
         m.setattr(socket, "socket", socket_get)
