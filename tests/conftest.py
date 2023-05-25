@@ -9,8 +9,8 @@ In VSCode, Code Coverage is recorded in config.xml. Delete this file to reset re
 """
 
 from __future__ import annotations
-
-from typing import List
+import json
+from typing import Any
 
 import pytest
 from _pytest.nodes import Item
@@ -28,3 +28,16 @@ def pytest_collection_modifyitems(items: list[Item]):
 def unit_test_mocks(monkeypatch: None):
     """Include Mocks here to execute all commands offline and fast."""
     pass
+
+
+def load_fixture(name: str) -> Any:
+    with open(f"tests/fixtures/{name}.json") as file:
+        return json.load(file)
+
+
+@pytest.fixture
+def discovery_data():
+    return load_fixture("discovery")
+
+
+

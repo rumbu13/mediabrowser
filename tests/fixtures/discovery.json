@@ -1,0 +1,32 @@
+{
+    "server_nossl": {
+        "type": 1,
+        "data": {
+            "Address": "http://server1:1",
+            "Id": "id1",
+            "Name": "name1"
+        }
+    },
+    "server_ssl": {
+        "type": 2,
+        "data": {
+            "Address": "https://server2:2",
+            "Id": "id2",
+            "Name": "name2"
+        }
+    },
+    "server_without_id": {
+        "type": 2,
+        "data": {
+            "Address": "http://server3:3",
+            "Name": "name3"
+        }
+    },
+    "server_without_address": {
+        "type": 2,
+        "data": {
+            "Id": "id4",
+            "Name": "name4"
+        }
+    }
+}
